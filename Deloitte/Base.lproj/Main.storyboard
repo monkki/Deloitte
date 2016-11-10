@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="68" y="131"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="7a8-w3-VGC">
             <objects>
-                <viewController id="6eu-fK-KTR" sceneMemberID="viewController">
+                <viewController id="6eu-fK-KTR" customClass="HomeViewController" customModule="Deloitte" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vfh-bl-haH"/>
                         <viewControllerLayoutGuide type="bottom" id="NIr-Cc-vrW"/>
@@ -121,6 +121,9 @@
                                     <constraint firstAttribute="height" constant="81" id="1kI-z4-5wg"/>
                                 </constraints>
                                 <state key="normal" image="botonInfoEvento"/>
+                                <connections>
+                                    <action selector="botonInfoEvento:" destination="6eu-fK-KTR" eventType="touchUpInside" id="A4q-QH-lf5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-b0-UeM">
                                 <rect key="frame" x="48" y="533" width="279" height="81"/>
@@ -128,6 +131,9 @@
                                     <constraint firstAttribute="height" constant="81" id="zOW-7y-5xp"/>
                                 </constraints>
                                 <state key="normal" image="botonSeccInteractiva"/>
+                                <connections>
+                                    <action selector="botonSeccionInteractiva:" destination="6eu-fK-KTR" eventType="touchUpInside" id="LXa-qc-vsk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqu-H4-7hE">
                                 <rect key="frame" x="48" y="451" width="279" height="81"/>
@@ -135,7 +141,17 @@
                                     <constraint firstAttribute="height" constant="81" id="6Ry-1R-j8u"/>
                                 </constraints>
                                 <state key="normal" image="botonPonencias"/>
+                                <connections>
+                                    <action selector="botonPonencias:" destination="6eu-fK-KTR" eventType="touchUpInside" id="naZ-60-Hu0"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtV-XW-bdA">
+                                <rect key="frame" x="49" y="263" width="278" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,6 +174,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cRz-fS-1zd"/>
+                    <connections>
+                        <outlet property="countDownLabel" destination="AtV-XW-bdA" id="fC9-l8-pW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwa-O7-TEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

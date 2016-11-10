@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TokenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

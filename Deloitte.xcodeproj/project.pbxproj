@@ -13,6 +13,8 @@
 		5CF035E21DD3FA5D002AD004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF035E11DD3FA5D002AD004 /* Assets.xcassets */; };
 		5CF035E51DD3FA5D002AD004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF035E31DD3FA5D002AD004 /* LaunchScreen.storyboard */; };
 		5CF035F01DD3FA5D002AD004 /* DeloitteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF035EF1DD3FA5D002AD004 /* DeloitteUITests.swift */; };
+		5CF035FC1DD42354002AD004 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF035FB1DD42354002AD004 /* PageViewController.swift */; };
+		5CF035FE1DD423A6002AD004 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF035FD1DD423A6002AD004 /* PageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5CF035EB1DD3FA5D002AD004 /* DeloitteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloitteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF035EF1DD3FA5D002AD004 /* DeloitteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUITests.swift; sourceTree = "<group>"; };
 		5CF035F11DD3FA5D002AD004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF035FB1DD42354002AD004 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5CF035FD1DD423A6002AD004 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF035D91DD3FA5D002AD004 /* Deloitte */,
+				5CF035FA1DD42322002AD004 /* Intro */,
 				5CF035EE1DD3FA5D002AD004 /* DeloitteUITests */,
 				5CF035D81DD3FA5D002AD004 /* Products */,
 			);
@@ -94,6 +99,15 @@
 				5CF035F11DD3FA5D002AD004 /* Info.plist */,
 			);
 			path = DeloitteUITests;
+			sourceTree = "<group>";
+		};
+		5CF035FA1DD42322002AD004 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				5CF035FB1DD42354002AD004 /* PageViewController.swift */,
+				5CF035FD1DD423A6002AD004 /* PageContentViewController.swift */,
+			);
+			name = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF035FC1DD42354002AD004 /* PageViewController.swift in Sources */,
+				5CF035FE1DD423A6002AD004 /* PageContentViewController.swift in Sources */,
 				5CF035DD1DD3FA5D002AD004 /* ViewController.swift in Sources */,
 				5CF035DB1DD3FA5D002AD004 /* AppDelegate.swift in Sources */,
 			);
